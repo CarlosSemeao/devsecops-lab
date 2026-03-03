@@ -1,17 +1,19 @@
 == Session 02 Linux Boundary Check ==
-UTC Timestamp: 2026-03-03T03:41:43Z
+UTC Timestamp: 2026-03-03T04:11:37Z
 
 == Host Info ==
 Linux fedora 6.18.13-200.fc43.aarch64 #1 SMP PREEMPT_DYNAMIC Thu Feb 19 18:50:42 UTC 2026 aarch64 GNU/Linux
 
 == Current User ==
-carlossemeao
-uid=1000(carlossemeao) gid=1000(carlossemeao) groups=1000(carlossemeao),10(wheel) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
+root
+uid=0(root) gid=0(root) groups=0(root) context=unconfined_u:unconfined_r:unconfined_t:s0-s0:c0.c1023
 
 == Sudo Group Members ==
 wheel:x:10:carlossemeao
 
 == SSH Config Checks ==
+permitrootlogin no
+passwordauthentication no
 
 == Sensitive File Permissions ==
 -rw-r--r--. 1 root root 3097 Feb 23 05:50 /etc/passwd
@@ -19,6 +21,7 @@ wheel:x:10:carlossemeao
 -r--r-----. 1 root root 4375 Nov  4 00:00 /etc/sudoers
 
 == Sudoers Includes ==
+total 0
 
 == Result ==
 Boundary baseline evidence captured.
